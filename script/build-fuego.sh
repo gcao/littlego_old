@@ -43,7 +43,10 @@ FUEGO_MACOSX_LDFLAGS="-isysroot $MACOSX_BASESDK_DIR -L$MACOSX_PREFIXDIR/lib"
 # autoconf process.
 FUEGO_COMMON_CONFIGUREFLAGS=""
 FUEGO_IPHONEOS_CONFIGUREFLAGS="--with-boost-libdir=$IPHONEOS_PREFIXDIR/lib"
-FUEGO_IPHONE_SIMULATOR_CONFIGUREFLAGS="--with-boost-libdir=$IPHONE_SIMULATOR_PREFIXDIR/lib"
+# Have to use --with-boost instead because boost header files in /usr/local/include
+# are used which causes compilation errors.
+#FUEGO_IPHONE_SIMULATOR_CONFIGUREFLAGS="--with-boost-libdir=$IPHONE_SIMULATOR_PREFIXDIR/lib"
+FUEGO_IPHONE_SIMULATOR_CONFIGUREFLAGS="--with-boost=$IPHONE_SIMULATOR_PREFIXDIR"
 FUEGO_MACOSX_CONFIGUREFLAGS="--with-boost-libdir=$MACOSX_PREFIXDIR/lib"
 
 # +------------------------------------------------------------------------
