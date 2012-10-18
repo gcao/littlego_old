@@ -10,4 +10,5 @@ Little Go.xcodeproj/xcuserdata
 doxygen/html
 dist/
 .DS_Store
+build
 
