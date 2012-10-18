@@ -177,8 +177,8 @@
       self.textField.enablesReturnKeyAutomatically = YES;
       self.textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
       // Only available since iOS 5
-      if ([self.textField respondsToSelector:@selector(setSpellCheckingType:)])
-        self.textField.spellCheckingType = UITextSpellCheckingTypeNo;
+      //if ([self.textField respondsToSelector:@selector(setSpellCheckingType:)])
+      //  self.textField.spellCheckingType = UITextSpellCheckingTypeNo;
 
       self.textField.delegate = self;
       self.textField.text = self.text;

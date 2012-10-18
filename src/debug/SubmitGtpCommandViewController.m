@@ -136,8 +136,8 @@
   self.textField.minimumFontSize = 12;
   self.textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
   // Only available since iOS 5
-  if ([self.textField respondsToSelector:@selector(setSpellCheckingType:)])
-    self.textField.spellCheckingType = UITextSpellCheckingTypeNo;
+  //if ([self.textField respondsToSelector:@selector(setSpellCheckingType:)])
+  //  self.textField.spellCheckingType = UITextSpellCheckingTypeNo;
 
   tableView.backgroundView = nil;
   [UiUtilities addGroupTableViewBackgroundToView:self.view];
